@@ -1,0 +1,22 @@
+<div class="main-flex">
+  <div class="voting-flex">
+    <h4>{{item.votes}}</h4>
+    <h6>Votes</h6>
+  </div>
+  <div class="vote-action-flex">
+    <button (click)="voteUp()" class="btn btn-link" type="button">
+      <i class="fa fa-arrow-up"></i>
+      <br>UP</button>
+    <button (click)="voteDown()"class="btn btn-link" type="button">
+      Down
+      <br>
+      <i class="fa fa-arrow-down"></i>
+    </button>
+  </div>
+  <div class="content-flex">
+    <div class="title-flex">
+      <h2>{{item.title}}</h2>
+      <a href="{{item.link}}">{{item.pureLink}}</a>
+    </div>
+  </div>
+</div>

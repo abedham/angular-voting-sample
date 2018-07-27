@@ -1,0 +1,11 @@
+<div class="flex-container">
+    <div class="form">
+      <div class="form-group">
+        <input class="form-control" type="text" placeholder="Title" #title/>
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" placeholder="Link" #link/>
+      </div>
+      <button class="btn btn-primary" (click)="createNewItem(title.value, link.value)">Add Item</button>
+    </div>
+  </div>

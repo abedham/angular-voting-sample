@@ -1,0 +1,2 @@
+<app-form-item (createItem)="addItem($event)"></app-form-item>
+<app-item *ngFor="let item of items; index as i" (reorder)="reorderItems($event)" [item]="item" [index]="i"></app-item>
